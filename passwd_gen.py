@@ -1,8 +1,14 @@
 import itertools, random
 
-simbols = input("Введи предполагаемые символы:\n")
-lenght = input('Введите количество символов:\n')
-brut_file = []
+
+def digit_check():
+    while True:    
+        try:
+            lenght = int(input('Enter the number:\n'))
+            return lenght
+        except ValueError:
+            print('Please, enter the number\n')
+            continue
 
 def file_save(data_file): # сохранение в файл..
     try:
@@ -27,4 +33,9 @@ def pass_gen(simbols, lenght, brut_file):
     file_save(brut_file)
 
 
-pass_gen(simbols, lenght, brut_file)
+
+lenght = digit_check()
+simbols = input("Введи предполагаемые символы:\n")
+brut_file = []
+
+pass_gen(simbols, lenght, brut_file) #запуск генератора
