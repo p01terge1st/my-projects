@@ -2,7 +2,7 @@ import requests, json
 import json
 from datetime import date
 
-#token = '1867672222:AAEsmBR7C2OJkUlUGnaK8E_rEJY33G7YVI4'
+
 
 
 def currency(cur_name):
