@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+#author: p01terge1st
+
 import itertools, random
 
 

@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+#author: p01terge1st
+
+
 import requests, json
 
 def unp_check(unp):
